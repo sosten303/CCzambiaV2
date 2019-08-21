@@ -36,9 +36,9 @@
 }
 
 body {
-	font-family:OpenSans-Light, Arial, Helvetica, sans-serif;
-	margin: 0px;
-	padding: auto;
+  font-family:OpenSans-Light, Arial, Helvetica, sans-serif;
+  margin: 0px;
+  padding: 0;
 }
 
 /*Navigation bar*/
@@ -80,8 +80,13 @@ nav a:not(:first-child){
   float: right;
   font-weight: 600;
 } 
+
+nav.main_nav a#active {
+  border-bottom: 1px solid #f1f1f1;
+}
+
 /*#######################*/
-/*experiment*/
+/*Adding Responsiveness*/
 @media screen and (max-width:767px) {
   div.main_nav.responsive {
     position: relative;
@@ -596,10 +601,12 @@ div.footer_form form input[type=submit]:hover {
 /* Number text (1/3 etc) */
 .numbertext {
   color: #f2f2f2;
-  font-size: 12px;
-  padding: 8px 12px;
-  position: absolute;
+  font-size: 14px;
+  padding: 1px 14px;
+  position: relative;
+  left: 4.3%;
   top: 0;
+  z-index: 1;
 }
 
 /* The dots/bullets/indicators */
@@ -655,6 +662,217 @@ div.footer_form form input[type=submit]:hover {
   text-align: center;
 }
 
+
+/*########## Awards $ Testmony #############*/
+.award_test_wrapper {
+  /*background-color: #f4f4f4;*/
+  margin-bottom: 10px;
+}
+
+/*########## Awards #############*/
+.award_content {
+  background-color: #f2f2f2;
+  color: #00333d;
+  padding: 20px;
+}
+
+.award_content h2 {
+  border-bottom: 1px solid #eeeeee;
+  padding: 10px;
+}
+
+.award_content i {
+  background-color: #ff8200;
+  padding: 20px;
+  margin-right: 20px;
+  border-radius: 100px;
+  color: #f1f1f1;
+}
+
+
+/*jssor slider loading skin spin css*/
+.jssorl-009-spin img {
+  animation-name: jssorl-009-spin;
+  animation-duration: 1.6s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+@keyframes jssorl-009-spin {
+  from {
+   transform: rotate(0deg);
+    }
+   to {
+    transform: rotate(360deg);
+   }
+}
+
+/*jssor slider bullet skin 111 css*/
+.jssorl-009-spin img {
+  width: 100%;
+}
+
+.jssor_container {
+  position: relative;
+  /*margin:0 auto;*/
+  /*top: 0px;*/
+  /*left: 0px;*/
+  /*width: 980px;*/
+  height: 380px;
+  overflow: hidden;
+  visibility: hidden;
+}
+
+.jssor_spin {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  background-color: rgba(0,0,0,0.7);
+}
+
+.img_spin {
+  margin-top: -19px;
+  position: relative;
+  top: 50%;
+  width: 38px;
+  height: 38px;
+}
+
+.slide {
+  cursor: default;
+  position: relative;
+  top: 0px;
+  left: 0px;
+  width: 580px;
+  height: 380px;
+  overflow: hidden;
+}
+
+.jssorb111 .i {
+  position: absolute;
+  color: #fff;
+  font-family: "Helvetica neue", Helvetica, Arial, sans-serif;
+  text-align:center;
+  cursor:pointer;
+  z-index:0;
+}
+
+.jssorb111 .i .n {
+  display: none;
+}
+
+.jssorb111 .i .b {
+  fill: #fff;
+  stroke: #000;
+  stroke-width: 500;
+  stroke-miterlimit: 10;
+  stroke-opacity: 0.5;
+}
+
+.jssorb111 .i:hover .b {
+  fill: #fea900;
+  stroke: #fea900;
+  stroke-width: 6000;
+  stroke-opacity: 1;
+}
+
+.jssorb111 .iav .b {
+  fill: #000;
+  stroke-width: 6000;
+  stroke-opacity: 1;
+}
+
+.jssorb111 .i.idn {
+  opacity: 0.3;
+}
+
+.jssorb111 .iav .n, .jssorb111 .i:hover .n {
+  display: block;
+}
+
+/*jssor slider thumbnail skin 121 css*/
+.jssort121 .p {
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-bottom: 1px solid rgba(255,255,255,.2);
+  box-sizing: border-box;
+  color: #fff;
+  background: rgba(0,0,0,.1);
+  opacity: 0.7;
+}
+
+.jssort121 .p .t {
+  position: absolute;
+  padding: 10px;
+  box-sizing: border-box;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  line-height: 24px;
+  overflow: hidden;
+}
+
+.jssort121 .p .i {
+  margin-right: 10px;
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 96px;
+  height: 48px;
+  border: none;
+  float: left;
+}
+
+.jssort121 .pav, .jssort121 .p:hover {
+  color: #000;
+  background: rgba(255,255,255,.7);
+}
+
+.jssort121 .p:hover {
+  opacity: .75;
+}
+
+.jssort121 .pav, .jssort121 .p:hover.pdn {
+  opacity:1;
+}
+
+.jssort121 .ti {
+  position: relative;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.jssort121 .d {
+  position: relative;
+  font-size: 12px;
+}
+ /*.jssort121 .d:before {content:'\a';white-space:pre;}*/
+
+/*########## Testmony #############*/
+.testmony_content {
+  background-color: #f2f2f2;
+  padding: 30px;
+  text-align: center;
+  color: #00333d;
+  border-bottom: 4px solid #ff8200;
+}
+
+.testmony_content p {
+  font-style: italic;
+  font-size: 18px;
+}
+
+.testmony_content img {
+  width: 20%;
+  border-radius: 100px;
+  background-color: #cccccc;
+  padding: 5px;
+}
 /*########## Service #############*/
 .service_head {
   background-color: #eeeeee;
@@ -715,6 +933,25 @@ p#service_title {
   color: #03333d;
 }
 
+.work_container button {
+  background-color: #ff8200;
+  padding: 37px 20px;
+  border: 1px solid #f2f2f2;
+  border-radius: 100px;
+
+}
+
+.work_container button a {
+  text-decoration: none;
+  font-size: 16px;
+  color: #ffffff;
+  padding: 10px;
+}
+
+.work_container button:hover {
+  opacity: 0.8;
+}
+
 .work_content {
   /*background-color: rgba(0,0,0,0.9);*/
   padding: 2px;
@@ -727,6 +964,7 @@ p#service_title {
 
 .work_content img {
   width: 100%;
+  height: 250px;
 }
 
 .work_content p#work-letter {
@@ -745,7 +983,7 @@ p#service_title {
   display: none;
   position: relative;
   transition: 0.6s ease;
-  /*margin-top: -80px;*/
+  margin-top: -80px;
   /*user-select: none;*/
 }
 
@@ -759,7 +997,8 @@ p#service_title {
 .work_content:hover .work_details {
   display: block;
    background-color: #eeeeee;
-  /*margin-top: -80px;*/
+  margin-top: -60px;
+  padding: 5px;
   position: relative;
   z-index: 1000;
   
