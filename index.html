@@ -84,14 +84,14 @@
 <br>
 
 <div style="text-align:center">
-  <span class="dot" onclick="currentSlide(1)"></span> 
-  <span class="dot" onclick="currentSlide(2)"></span> 
-  <span class="dot" onclick="currentSlide(3)"></span> 
+  <span class="dot" onclick="currentSlide(1)"></span>
+  <span class="dot" onclick="currentSlide(2)"></span>
+  <span class="dot" onclick="currentSlide(3)"></span>
 </div>
   </div>
 </div>
 
-</div> <!-- End Navigation Bar --> 
+</div> <!-- End Navigation Bar -->
 <!-- **************************************************************************************************** -->
 <!-- ***************** Services ************************ -->
 <div class="row">
@@ -101,14 +101,14 @@
     <p>CCZambia is a group of proffesional Contractors in various fields of constraction; Bricklying, Tiling, Electrical, plumbing and capentry. This group was formed by Benny Musonda in 2001. Ever since they have been proven the BEST contractors and consultants in Zambia and other countries.</p>
     <p><b>Mission</b>: <em>Our mission is to remain reliable and efficient at the forefront of the Zambian construction industry through quality, honesty, and hard work</em> <i class="fas fa-quote-right"></i></p>
   </div>
-  
+
   <div class="award_test_wrapper">
   <div class="row">
     <div class="col-md-6">
       <div class="award_content">
-      
+
       <h2><i class="fas fa-trophy"></i> Projects Arwards 4503</h2>
-    
+
     <div id="jssor_1" class="jssor_container">
         <!-- Loading Screen -->
         <div data-u="loading" class="jssorl-009-spin" class="jssor_spin">
@@ -131,7 +131,7 @@
                 <img data-u="image" src="img/53.jpg" />
                 <div u="thumb">Homart Mall</div>
             </div>
-            
+
         </div>
         <!-- Thumbnail Navigator -->
         <div data-u="thumbnavigator" class="jssort121" style="position:absolute;left:0px;top:0px;width:268px;height:380px;overflow:hidden;cursor:default;" data-autocenter="2" data-scale-left="0.75">
@@ -159,7 +159,7 @@
       <div class="testmony_content">
       <h2>Testimony</h2>
       <img src="img/jbm.jpg">
-      <p>You're the best not only in this field but in everything you do <i class="fas fa-quote-right"></i></p>
+      <p>You're the Best not only in this field but in everything you do <i class="fas fa-quote-right"></i></p>
       <p><b>Mr John Banda: Business Coach</b></p>
     </div>
     </div>
@@ -421,7 +421,7 @@
 </div>
 <div class="row">
   <div class="col-md-12">
-    <div class="footer_copy"> 
+    <div class="footer_copy">
     <p>CCzambia &copy 2019 All Rights Reserved; Designed and developed by sosten nyirenda</p>
   </div>
   </div>
@@ -460,15 +460,15 @@ function showSlides(n) {
   var i;
   var slides = document.getElementsByClassName("mySlides");
   var dots = document.getElementsByClassName("dot");
-  if (n > slides.length) {slideIndex = 1}    
+  if (n > slides.length) {slideIndex = 1}
   if (n < 1) {slideIndex = slides.length}
   for (i = 0; i < slides.length; i++) {
-      slides[i].style.display = "none";  
+      slides[i].style.display = "none";
   }
   for (i = 0; i < dots.length; i++) {
       dots[i].className = dots[i].className.replace(" active", "");
   }
-  slides[slideIndex-1].style.display = "block";  
+  slides[slideIndex-1].style.display = "block";
   dots[slideIndex-1].className += " active";
 }
 </script>
