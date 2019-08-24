@@ -35,11 +35,14 @@
    src: url(../fonts/.Goldoni_DEMO.otf);
 }
 
-body {
-	font-family:OpenSans-Light, Arial, Helvetica, sans-serif;
-	margin: 0px;
-	padding: auto;
-}
+html, body {
+  max-width: 100%;
+  overflow-x: hidden;
+  font-family:OpenSans-Light, Arial, Helvetica, sans-serif;
+  margin: 0px;
+  padding: 0;
+  width: 100%;
+  }
 
 /*Navigation bar*/
 
@@ -79,7 +82,7 @@ nav.main_nav a:hover {
 nav a:not(:first-child){
   float: right;
   font-weight: 600;
-} 
+}
 
 nav.main_nav a#active {
   border-bottom: 1px solid #f1f1f1;
@@ -238,7 +241,7 @@ div.service_content {
 
 .service_content:hover {
   background-color:#989898;
-  border-radius: 3px; 
+  border-radius: 3px;
 }
 
 /*########## Our Work #############*/
@@ -308,7 +311,7 @@ div.work_content {
   background-color: #eeeeee;
   position: relative;
   z-index: 1000;
-  
+
 }
 
 .work_content:hover .work_details {
@@ -317,7 +320,7 @@ div.work_content {
   /*margin-top: -80px;*/
   position: relative;
   z-index: 1000;
-  
+
 }
 
 /*########## Contact Header #####*/
@@ -518,12 +521,12 @@ div.footer_form form input[type=submit]:hover {
 /*######### Media Query #######*/
 /*TABLET SCREEN MAX-WIDTH 1199PX*/
 @media(max-width:1199px) and (min-width:768px) {
-   
+
 }
 
 /*SMART PHONE MAX-WIDTH 767PX*/
 @media(max-width:767px){
-  
+
 }
 
 /*###### Carousel ##############*/
@@ -634,12 +637,12 @@ div.footer_form form input[type=submit]:hover {
 }
 
 @-webkit-keyframes fade {
-  from {opacity: .4} 
+  from {opacity: .4}
   to {opacity: 1}
 }
 
 @keyframes fade {
-  from {opacity: .4} 
+  from {opacity: .4}
   to {opacity: 1}
 }
 
@@ -748,7 +751,7 @@ div.footer_form form input[type=submit]:hover {
 
 @keyframes jssorl-009-spin {
   from {
-  transform: rotate(0deg); 
+  transform: rotate(0deg);
   }
   to {
     transform: rotate(360deg);
@@ -920,7 +923,7 @@ div.footer_form form input[type=submit]:hover {
   background-color: #eeeeee;
   position: relative;
   z-index: 1000;
-  
+
 }
 
 .work_content:hover .work_details {
@@ -929,7 +932,7 @@ div.footer_form form input[type=submit]:hover {
   /*margin-top: -80px;*/
   position: relative;
   z-index: 1000;
-  
+
 }
 
 /*#########################################*/
