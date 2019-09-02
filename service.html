@@ -16,60 +16,78 @@
   <script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
 </head>
 
-<body style="margin: 0px; padding: 0px">
+<body>
 
-  <div class="nav_wrapper" style="margin: 0px;">
-  <div class="row">
-    <div class="col-md-12">
-     <nav class="main_nav" id="nav">
-      <a href="index.html">CCZambia</a>
-      <a href="contact.html">Contact</a>
-      <a href="work.html">Work</a>
-      <a href="service.html" id="active">Service</a>
-      <a href="about.html">About</a>
-      <a href="index.html">Home</a>
-      <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-      <i class="fa fa-bars"></i>
-     </a>
-    </nav>
+	<div class="nav_wrapper clearfix">
+	<div class="row">
+		<div class="col-md-12">
+		 <nav class="main_nav" id="nav">
+			 <a href="index.html" id="theme">Contractors Group</a>
+			 <a href="index.html" id="logo">CCZambia</a>
+			 <a href="contact.html">Contact</a>
+			 <a href="work.html">Work</a>
+			 <a href="service.html" id="active">Service</a>
+			 <a href="about.html">About</a>
+			 <a href="index.html">Home</a>
+			 <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+			 <i class="fa fa-bars"></i>
+			 </a>
+		</nav>
 </div>
 </div>
 
 <div class="row">
-  <div class="col-md-12">
+	<div class="col-md-12">
 <div class="slideshow-container">
 
 <div class="mySlides fade">
-  <div class="numbertext">Contractors Group</div>
-  <img src="img/bm.jpg" style="width:100%">
-  <div class="text">
-    <div class="tex_content">
-    <p>CCzambia Contrators Group</p>
-  <h1>We Build Nations with Quality Infrastracture</h1>
+	<img src="img/bm.jpg" style="width:100%">
+	<div class="text">
+		<div class="tex_content">
+		<p>CCzambia Contrators Group</p>
+	<h1>We Build Nations with Quality Infrastracture</h1>
 </div>
 </div>
 </div>
 
 <div class="mySlides fade">
-  <div class="numbertext">Contactors Group</div>
-  <img src="img/aleksan.jpg" style="width:100%">
-  <div class="text">
-    <div class="tex_content">
-    <p>CCzambia Contrators Group</p>
-  <h1>We Build With Excellency</h1>
+	<img src="img/claudi.jpg" style="width:100%">
+	<div class="text">
+		<div class="tex_content">
+		<p>CCzambia Contrators Group</p>
+	<h1>Your Desire is Our Priority</h1>
 </div>
-  </div>
+</div>
 </div>
 
 <div class="mySlides fade">
-  <div class="numbertext">Contractors Group</div>
-  <img src="img/flo.jpg" style="width:100%">
-  <div class="text">
-    <div class="tex_content">
-    <p>CCzambia Contrators Group</p>
-  <h1>We Design, Plan and Build</h1>
+	<img src="img/bruci.jpg" style="width:100%">
+	<div class="text">
+		<div class="tex_content">
+		<p>CCzambia Contrators Group</p>
+	<h1>We Build Nations with Quality Infrastracture</h1>
 </div>
-  </div>
+</div>
+</div>
+
+<div class="mySlides fade">
+	<img src="img/aleksan.jpg" style="width:100%">
+	<div class="text">
+		<div class="tex_content">
+		<p>CCzambia Contrators Group</p>
+	<h1>We Build With Excellency</h1>
+</div>
+	</div>
+</div>
+
+<div class="mySlides fade">
+	<img src="img/flo.jpg" style="width:100%">
+	<div class="text">
+		<div class="tex_content">
+		<p>CCzambia Contrators Group</p>
+	<h1>We Design, Plan and Build</h1>
+</div>
+	</div>
 </div>
 
 <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
@@ -78,12 +96,12 @@
 </div>
 <br>
 
-<div style="text-align:center">
-  <span class="dot" onclick="currentSlide(1)"></span>
-  <span class="dot" onclick="currentSlide(2)"></span>
-  <span class="dot" onclick="currentSlide(3)"></span>
+<div style="text-align:center" class="dot-container">
+	<span class="dot" onclick="currentSlide(1)"></span>
+	<span class="dot" onclick="currentSlide(2)"></span>
+	<span class="dot" onclick="currentSlide(3)"></span>
 </div>
-  </div>
+	</div>
 </div>
 
 </div> <!-- End Navigation Bar -->
@@ -242,6 +260,23 @@ function myFunction() {
 
 
 <!-- Java Script for Carousel -->
+<script>
+var myIndex = 0;
+carousel();
+
+function carousel() {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+  myIndex++;
+  if (myIndex > x.length) {myIndex = 1}
+  x[myIndex-1].style.display = "block";
+  setTimeout(carousel, 6000); // Change image every 6 seconds
+}
+</script>
+
 <script>
 var slideIndex = 1;
 showSlides(slideIndex);

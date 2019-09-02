@@ -27,7 +27,27 @@
 
 @font-face {
    font-family: Recoba;
-   src: url(../fonts/Recoba.ttf);
+   src: url(../fonts/Recoba.otf);
+}
+
+@font-face {
+   font-family: Violina-Regular;
+   src: url(../fonts/Violina-Regular.otf);
+}
+
+@font-face {
+   font-family: VIPRoman-Regular;
+   src: url(../fonts/VIPRoman-Regular.otf);
+}
+
+@font-face {
+   font-family: RobotoCondensed-Bold;
+   src: url(../fonts/RobotoCondensed-Bold.ttf);
+}
+
+@font-face {
+   font-family: RobotoCondensed-Regular;
+   src: url(../fonts/RobotoCondensed-Regular.ttf);
 }
 
 @font-face {
@@ -36,12 +56,11 @@
 }
 
 html, body {
-  max-width: 100%;
+  width: 100%;
   overflow-x: hidden;
-  font-family:OpenSans-Light, Arial, Helvetica, sans-serif;
+  font-family: OpenSans-Light, Arial, Helvetica, sans-serif;
   margin: 0px;
   padding: 0;
-  width: 100%;
   }
 
 /*Navigation bar*/
@@ -55,27 +74,29 @@ html, body {
 nav.main_nav {
   margin-bottom: -110px;
   background-color: rgba(0,51,95,0.655);
-  padding: 40px;
+  transition: 0.4s;
+  overflow: hidden;
+  width: 100%;
+  top: 0;
+  padding: 40px 30px 0px 0px;
   position: relative;
   z-index: 10000;
 }
 
 nav.main_nav a:first-child {
-  font-size: 24px;
   margin-left: 20px;
 }
+
 nav.main_nav a {
   font-family: Arial;
   margin-right: 30px;
   color: #f2f2f2;
   font-size: 14px;
   text-decoration: none;
-  /*background-color: #cccccc;*/
   padding: 10px;
 }
 
 nav.main_nav a:hover {
-  /*border-bottom: 1px solid #ff8200;*/
   color: #ff8200;
 }
 
@@ -84,85 +105,364 @@ nav a:not(:first-child){
   font-weight: 600;
 }
 
+nav a:first-child {
+  float: left;
+  line-height: 1.2;
+  letter-spacing: 1.2px;
+  font-family: Helvetica;
+  color: #00a0ff;
+  margin: 0px 10px 0px 0px;
+  width: 30%;
+  padding: 5px;
+  position: relative;
+  left: 5%;
+  margin-top: 40px;
+  font-size: 14px;
+  font-weight: normal;
+}
+
+nav a:nth-child(2) {
+  float: left;
+  width: 20%;
+  color: #cc6900;
+  font-family: "RobotoCondensed-Regular";
+  padding: 5px;
+  position: relative;
+  right: 26%;
+  font-size: 34px;
+  font-weight: normal;
+
+}
+
+nav a#theme {
+  font-size: 14px;
+}
+
 nav.main_nav a#active {
   border-bottom: 1px solid #f1f1f1;
 }
 
-/*#######################*/
-/*Adding Responsiveness*/
-@media screen and (max-width:767px) {
-  div.main_nav.responsive {
-    position: relative;
-  }
-
-  .main_nav.responsive a:first-child{
-    display: block;
-    margin-left: -20px;
-  }
-  .main_nav.responsive .icon {
-    position: relative;
-    display: block;
-    margin-top: 30px;
-  }
-  .main_nav.responsive a {
-    float: none;
-    display: block;
-    text-align: left;
-  }
-}
-
-.main_nav .icon {
+nav.main_nav a.icon {
+  display: block;
+  font-size: 18px;
   display: none;
 }
 
-@media screen and (max-width: 767px) {
-  .main_nav a:not(:first-child) {
-    display: none;
-  }
-  .main_nav a.icon {
-    float: right;
-    display: block;
-    position: relative;
-    /*margin-right: -10px;*/
-  }
 
-  nav.main_nav i {
-    font-size: 24px;
-  }
+/*###### Carousel ##############*/
 
-  nav.main_nav a:first-child {
-  font-size: 16px;
-  font-weight: bold;
+
+.mySlides {
+  display: none
 }
 
+.slideshow-container img {
+  vertical-align: middle;
+  width: 100%;
+  height: 799px;
+  margin-top: -60px;
+  opacity: 0.4555555;
+}
+
+/* Slideshow container */
+.slideshow-container {
+  position: relative;
+  margin: auto;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 32%;
+  background-color: rgba(0,0,0,0.5);
+  margin-bottom: -8px;
+  height: 800px;
+  border-radius: 0px 400px 60px 0px;
+}
+
+.tex_content {
+  background-color: #ff8200;
+  margin-top: 500px;
+  padding: 20px;
+  border-radius: 3px 5px 50px 3px;
+}
+
+/* The dots/bullets/indicators */
+.dot-container {
+  position: relative;
+  padding: 10px;
+  margin-top: -100px;
+}
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .prev, .next,.text {
+    font-size: 11px;
+  }
+}
+/* ######### End General CSS for Nav-Bar ############## */
+
+/* ########### mobile-nav/tablets ####### */
+@media only screen and (max-width: 767px) {
+  nav.main_nav {
+    padding: 5px;
+  }
+}
+
+
+
+  @media screen and (max-width: 800px) {
+
+    nav.main_nav a {
+      display: none;
+      padding: 10px;
+    }
+
+    nav.main_nav {
+      padding: 20px;
+    }
+
+    nav a#theme {
+      display: inline-block;
+      font-size: 12px;
+      float: left;
+      position: absolute;
+      left: 0.2%;
+      width: 50%;
+    }
+
+    nav a#logo {
+      float: left;
+      display: inline-block;
+      position: relative;
+      left: 0%;
+      top: 40%;
+      font-size: 26px;
+    }
+
+    nav.main_nav a.icon {
+      float: right;
+      display: inline-block;
+      font-size: 25px;
+      position: absolute;
+      right: 0;
+      left: 91%;
+      top: 22%;
+    }
+
+/* ######### Adding Responsiveness ###### */
+
+  nav.main_nav.responsive a#logo {
+    float: left;
+    color: #ff8200;
+    position: relative;
+    background-color: #000000;
+    padding: 20px;
+    font-family: sans-serif;
+    width: 100%;
+    border-radius: 2px 60px 0px 0px;
+    margin-left: -39px;
+    margin-top: -40px;
+    left: 0;
+    top: 0;
+  }
+
+  nav.main_nav.responsive a#logo:hover {
+    text-align: left;
+  }
+
+  nav.main_nav.responsive a#theme {
+    color: #ffffff;
+    padding: 5px;
+    position: absolute;
+    top: 10%;
+    left: 3%;
+    z-index: 1;
+    width: 50%; */
+  }
+
+
+  nav.main_nav.responsive {
+    position: relative;
+    background-color: #f4f4f4;
+    opacity: 0.8999;
+    border-radius: 0px 0px 0px 100px;
+    padding: 40px;
+    text-align: center;
+  }
+
+  nav.main_nav.responsive a.icon {
+    float: right;
+    display: inline-block;
+    font-size: 22px;
+    position: absolute;
+    right: 0;
+    left: 90%;
+    top: 1%;
+  }
+
+  nav.main_nav.responsive a.icon:hover {
+    background-color: #dddddd;
+    position: absolute;
+    float: none;
+    width: 11%;
+    transition: 0.2s ease;
+    right: 0;
+    color: #ff8200;
+  }
+
+  nav.main_nav.responsive a {
+    float: none;
+    transition: 1.2s ease;
+    width: 30%;
+    display: block;
+    margin: 10px;
+    text-align: left;
+    color: #222222;
+
+  }
+
+  nav.main_nav.responsive a:hover {
+    background-color: #dddddd;
+    transition: All 1.2s;
+    text-align: center;
+    color: #ff8200;
+    width: 70%;
+    border-radius: 20px 40px 40px 20px;
+  }
+}
+
+/*########## End Responsiveness #############*/
+
+@media screen and (max-width: 800px) {
+
 /*####### Smart Phone Carousel ######*/
+/* ####################################### */
 div.slideshow-container img {
   vertical-align: middle;
   width: 100%;
   height: 500px;
-  margin-top: -120px;
+  margin-top: -1px;
   opacity: 0.4555555;
 }
 
 div.tex_content {
   background-color: #ff8200;
-  margin-top: 500px;
+  margin-top: 400px;
   margin-left: 30px;
+  width: 50%;
   padding: 20px;
-  border-radius: 3px 5px 50px 3px;
+  border-radius: 3px 5px 60px 3px;
 }
 
 /* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  background-color: rgba(0,0,0,0.5);
+  margin-bottom: -8px;
+  height: 600px;
+  border-radius: 0px 900px 500px 0px;
+  /*text-align: center;*/
+}
+
 div.text {
-   width: 80%;
+   width: 90%;
 }
 
 .tex_content h1 {
-  font-size: 14px;
+  font-size: 18px;
 }
 
 .tex_content p {
   font-size: 12px;
+}
+
+/* The dots/bullets/indicators */
+.dot-container {
+  /* background-color: yellow; */
+  position: relative;
+  padding: 10px;
+  margin-top: -23px;
+}
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
 }
 
 /*########## About Us #############*/
@@ -500,157 +800,98 @@ div.footer_form form input[type=submit]:hover {
 } /*end media query*/
 
 
-@media screen and (max-width: 767px) {
-  .main_nav.responsive {
-    position: relative;
-  }
-
-  .main_nav.responsive .icon {
-    position: absolute;
-    right: 0;
-    top: 0;
-  }
-  .main_nav.responsive a {
-    float: none;
-    display: block;
-    text-align: left;
-  }
-}
-/*#########################*/
-
 /*######### Media Query #######*/
 /*TABLET SCREEN MAX-WIDTH 1199PX*/
 @media(max-width:1199px) and (min-width:768px) {
 
 }
 
-/*SMART PHONE MAX-WIDTH 767PX*/
-@media(max-width:767px){
+/*SMART PHONE MAX-WIDTH 500PX*/
+@media(max-width:500px){
+  nav.main_nav {
+    padding: 20px;
+
+  }
+  nav.main_nav a.icon {
+    font-size: 25px;
+    position: absolute;
+    right: 0;
+    left: 87%;
+    top: 22%;
+
+  }
+
+  nav.main_nav.responsive a.icon {
+    float: right;
+    display: inline-block;
+    font-size: 22px;
+    position: absolute;
+    right: 0;
+    left: 87%;
+    top: 1%;
+  }
+
+  /* ######## Carousel ######## */
+  div.tex_content {
+    background-color: #ff8200;
+    margin-top: 400px;
+    margin-left: 30px;
+    width: 80%;
+    padding: 20px;
+    border-radius: 3px 5px 60px 3px;
+  }
+
+  /* Caption text */
+  .text {
+    color: #f2f2f2;
+    font-size: 15px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    background-color: rgba(0,0,0,0.5);
+    margin-bottom: -8px;
+    height: 600px;
+    border-radius: 0px 900px 500px 0px;
+    /*text-align: center;*/
+  }
+
+  div.text {
+     width: 90%;
+  }
+
+  .tex_content h1 {
+    font-size: 18px;
+  }
+
+  .tex_content p {
+    font-size: 12px;
+  }
+
+  /* The dots/bullets/indicators */
+  .dot-container {
+    /* background-color: yellow; */
+    position: relative;
+    padding: 10px;
+    margin-top: -23px;
+  }
+  .dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+  }
+
+  .active, .dot:hover {
+    background-color: #717171;
+  }
 
 }
 
-/*###### Carousel ##############*/
-
-
-.mySlides {
-  display: none
-}
-
-.slideshow-container img {
-  vertical-align: middle;
-  width: 100%;
-  height: 700px;
-  margin-top: -150px;
-  opacity: 0.4555555;
-}
-
-/* Slideshow container */
-.slideshow-container {
-  /*max-width: 1000px;*/
-  position: relative;
-  margin: auto;
-}
-
-/* Next & previous buttons */
-.prev, .next {
-  cursor: pointer;
-  position: absolute;
-  top: 50%;
-  width: auto;
-  padding: 16px;
-  margin-top: -22px;
-  color: white;
-  font-weight: bold;
-  font-size: 18px;
-  transition: 0.6s ease;
-  border-radius: 0 3px 3px 0;
-  user-select: none;
-}
-
-/* Position the "next button" to the right */
-.next {
-  right: 0;
-  border-radius: 3px 0 0 3px;
-}
-
-/* On hover, add a black background color with a little bit see-through */
-.prev:hover, .next:hover {
-  background-color: rgba(0,0,0,0.8);
-}
-
-/* Caption text */
-.text {
-  color: #f2f2f2;
-  font-size: 15px;
-  padding: 8px 12px;
-  position: absolute;
-  bottom: 8px;
-  width: 32%;
-  background-color: rgba(0,0,0,0.5);
-  margin-bottom: -2px;
-  height: 650px;
-  border-radius: 0px 400px 60px 0px;
-  /*text-align: center;*/
-}
-
-.tex_content {
-  background-color: #ff8200;
-  margin-top: 410px;
-  padding: 20px;
-  border-radius: 3px 5px 50px 3px;
-}
-
-
-/* Number text (1/3 etc) */
-.numbertext {
-  color: #f2f2f2;
-  font-size: 14px;
-  padding: 1px 14px;
-  position: relative;
-  left: 4.3%;
-  top: 0;
-  z-index: 1;
-}
-
-/* The dots/bullets/indicators */
-.dot {
-  cursor: pointer;
-  height: 15px;
-  width: 15px;
-  margin: 0 2px;
-  background-color: #bbb;
-  border-radius: 50%;
-  display: inline-block;
-  transition: background-color 0.6s ease;
-}
-
-.active, .dot:hover {
-  background-color: #717171;
-}
-
-/* Fading animation */
-.fade {
-  -webkit-animation-name: fade;
-  -webkit-animation-duration: 1.5s;
-  animation-name: fade;
-  animation-duration: 1.5s;
-}
-
-@-webkit-keyframes fade {
-  from {opacity: .4}
-  to {opacity: 1}
-}
-
-@keyframes fade {
-  from {opacity: .4}
-  to {opacity: 1}
-}
-
-/* On smaller screens, decrease text size */
-@media only screen and (max-width: 300px) {
-  .prev, .next,.text {font-size: 11px}
-}
-
+/* End 500px Media query */
 /*#########################################*/
 
 /*########## About Us #############*/
