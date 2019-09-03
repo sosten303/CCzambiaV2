@@ -89,7 +89,7 @@
   <div class="text">
     <div class="tex_content">
     <p>CCzambia Contrators Group</p>
-  <h1>We Design, Plan and Build</h1>
+  <h1>We Design, Plan and Build With Passion & Integrity</h1>
 </div>
   </div>
 </div>
@@ -110,21 +110,61 @@
 
 </div> <!-- End Navigation Bar -->
 <!-- **************************************************************************************************** -->
-<!-- ***************** Services ************************ -->
+<!-- ***************** Introduction ************************ -->
 <div class="row">
   <div class="col-md-12">
     <div class="about_us_container">
-    <h2>CCZambia</h2>
-    <p>CCZambia is a group of proffesional Contractors in various fields of constraction;<b> Bricklying, Tiling, Electrical, plumbing and capentry.</b> This group was formed by Benny Musonda in 2001. Ever since they have been proven the BEST contractors and consultants in Zambia and other countries.</p>
-    <p><b>Mission</b>: <em>Our mission is to remain reliable and efficient at the forefront of the Zambian construction industry through quality, honesty, and hard work</em> <i class="fas fa-quote-right"></i></p>
+    <div class="about_us_head">
+    <h1>CCZambia</h1>
+    <p>Constraction Connector of Professional Contrators in the World</p>
+    <p id="border"></p>
+  </div>
+  <div class="about_us_content">
+    <p>CCZambia is a group of profesional Contractors in various fields of constraction;
+    <b> Bricklying, Tiling, Electrical, plumbing and capentry.</b>
+    This group was formed by Mr. Benny Musonda (CEO BM Constraction Group Of Companies) in 2001. Ever since they have been proven the
+     BEST Contractors and Consultants in Zambia and other countries.</p>
+     <p>This Group is a pool of Enthusiastics and Professional Contrators that are reliable and efficient in Constraction Industry.</p>
+  </div>
+  </div>
+
+  <div class="row">
+    <div class="col-md-12">
+      <div class="project_container">
+       <div class="project_bg">
+      <div class="row">
+      <div class="col-md-4">
+        <div class="project_content">
+        <i class="fas fa-trophy"></i>
+        <p>Total Projects <br/> <span id="project_num"> 4,503</span></p>
+      </div>
+      </div>
+      <div class="col-md-4">
+        <div class="project_content">
+        <i class="fas fa-user-tie"></i>
+        <p>Awesome Clients <br/> <span id="project_num"> 3,140</span></p>
+      </div>
+      </div>
+      <div class="col-md-4">
+        <div class="project_content">
+        <i class="fas fa-calendar-check"></i>
+        <p>Projects Done <br/> <span id="project_num"> 3,852</span></p>
+      </div>
+      </div>
+      </div>
+    </div>
+     </div>
+    </div>
   </div>
 
   <div class="award_test_wrapper">
+    <!-- sub row -->
   <div class="row">
     <div class="col-md-6">
       <div class="award_content">
 
-      <h2><i class="fas fa-trophy"></i> Projects Arwards 4503</h2>
+      <h1>Our Projects</h1>
+      <p id="border"></p>
 
     <div id="jssor_1" class="jssor_container">
         <!-- Loading Screen -->
@@ -182,10 +222,12 @@
   </div>
     <div class="col-md-6">
       <div class="testmony_content">
-      <h2>Testimony</h2>
+      <h2>Client Feedback</h2>
       <img src="img/tom.jpg">
-      <p>You're the Best not only in this field but in everything you do <i class="fas fa-quote-right"></i></p>
+      <p id="quote">You are reliable and efficient on your job. On time project completion, helped me to save reasources
+        <br/> <i class="fas fa-quote-right"></i></p>
       <p><b>Mr Thomas Mwale: Business Coach</b></p>
+      <p id="border"></p>
     </div>
     </div>
   </div>
@@ -197,7 +239,8 @@
   <div class="col-md-12">
     <div class="service_head">
     <h2>Services</h2>
-    <p>We Design, Plan and Build Awesome Infrastructures; Simply put we are leaders in Constraction</p>
+    <p>We Design, Plan and Build Awesome Infrastructures; And also We are the leading Consultants in this Industry;
+       Simply put we are leaders in Constraction</p>
   </div>
 </div>
 </div>
@@ -356,6 +399,47 @@
 </div>
 </div><!--end main row 1-->
 </div>
+
+<!-- ********* faq ***************** -->
+<div class="row">
+  <div class="col-md-12">
+    <div class="faq_container">
+      <div class="faq_bg">
+      <h2>FAQ <i class="fas fa-question"></i> </h2>
+      <div class="faq_content">
+      <div class="main">
+       <h4><i class="fas fa-plus"></i> How do you operate ?</h4>
+      <div class="answer">
+      <p> By  Registering</p>
+     </div>
+  </div>
+     <!-- ************************ -->
+     <div class="main">
+       <h4><i class="fas fa-plus"></i> How long do you take to finish a project ?</h4>
+      <div class="answer">
+      <p> By  Registering</p>
+     </div>
+  </div>
+  <!-- ************************************ -->
+  <div class="main">
+       <h4><i class="fas fa-plus"></i> How is your project time flame ?</h4>
+      <div class="answer">
+      <p> By  Registering</p>
+     </div>
+  </div>
+  <!-- ************************************ -->
+  <div class="main">
+       <h4><i class="fas fa-plus"></i> How can I Join the Group ?</h4>
+      <div class="answer">
+      <p> By  Registering</p>
+     </div>
+  </div>
+   </div>
+  </div>
+</div>
+</div>
+</div>
+
 <!-- ************** Contact Us *************** -->
 <div class="row">
   <div class="col-md-12">
@@ -512,5 +596,20 @@ function showSlides(n) {
   dots[slideIndex-1].className += " active";
 }
 </script>
+<!-- Jquery.js for faq -->
+      <script> $(document).ready(function() {
+      $('.answer').hide();
+      $('.main h4').click(function() {
+      var $answer = $(this).next('.answer');
+      if ($answer.is(':hidden')) {
+          $answer.slideDown();
+         $(this).addClass('close');
+         } else {
+         $answer.fadeOut();
+         $(this).removeClass('close');
+       }
+     }); // end click
+   }); // end of ready()
+ </script>
 </body>
 </html>

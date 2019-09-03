@@ -466,29 +466,323 @@ div.text {
 }
 
 /*########## About Us #############*/
-.about_us_container {
+div.about_us_container {
   background-color: #eeeeee;
   padding: 20px;
   color: #03333d;
   margin-bottom: 10px;
 }
 
-div.about_us_container h2, div.about_us_container p {
-  text-align: left;
-}
-
-div.about_us_container h2 {
-  font-size: 14px;
-  /*font-family: sans-serif;*/
-  border-bottom: 1px solid #bbbbbb;
-}
-
 div.about_us_container p {
   font-size: 13px;
-  /*font-family: sans-serif;*/
+}
+
+div.about_us_head p#border {
+  background-image: linear-gradient(90deg, #cc5f00, rgba(0,255,250,0.8));
+  padding: 1px;
+  width: 56%;
+  float: right;
+  position: absolute;
+  left: 20%;
+  top: 17%;
+}
+
+
+div.about_us_head h1, div.about_us_head p {
+  text-align: center;
+}
+
+div.about_us_head h1 {
+  font-size: 24px;
+  font-family: sans-serif;
+}
+
+div.about_us_content {
+  background-color: #f2f2f2;
+  padding: 10px;
+  border-radius: 3px;
+}
+
+div.about_us_head {
+  font-size: 13px;
 }
 
 /*###############################*/
+/* ########### Project  Content ####### */
+div.project_container {
+  background-image: url(../img/claudi.jpg);
+  background-attachment: fixed;
+  background-size: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+div.project_bg {
+ background-color: rgba(0, 0, 0, 0.5);
+ padding: 30px;
+}
+
+div.project_content {
+  background-color: #f2f2f2;
+  padding: 20px;
+  text-align: center;
+  border-radius: 3px;
+  margin-bottom: 4px;
+}
+
+div.project_content i {
+  background-color: #ff8200;
+  box-shadow: 0px 4px 2px #dddddd;
+  color: #ffffff;
+  font-size: 22px;
+  padding: 10px;
+  border-radius: 100px;
+}
+
+div.project_content p {
+  font-size: 18px;
+}
+
+p span#project_num {
+  font-size: 20px;
+  color: #555555;
+}
+
+/*########## Awards $ Testmony #############*/
+div.award_test_wrapper {
+  margin-bottom: 10px;
+}
+
+/*########## Awards #############*/
+div.award_content {
+  background-color: #f2f2f2;
+  color: #00333d;
+  padding: 20px;
+}
+
+div.award_content h1 {
+  padding: 10px;
+  font-family: sans-serif;
+  font-weight: normal;
+  font-size: 20px;
+}
+
+div.award_content p#border {
+  background-image: linear-gradient(90deg, #cc5f00, rgba(0,255,250,0.8));
+  padding: 1px;
+  width: 100%;
+}
+
+
+/*jssor slider loading skin spin css*/
+div.jssorl-009-spin img {
+  animation-name: jssorl-009-spin;
+  animation-duration: 1.6s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+@keyframes jssorl-009-spin {
+  from {
+   transform: rotate(0deg);
+    }
+   to {
+    transform: rotate(360deg);
+   }
+}
+
+/*jssor slider bullet skin 111 css*/
+div.jssorl-009-spin img {
+  width: 100%;
+}
+
+div.jssor_container {
+  position: relative;
+  /*margin:0 auto;*/
+  /*top: 0px;*/
+  /*left: 0px;*/
+  width: 300px;
+  height: 315px;
+  overflow: hidden;
+  visibility: hidden;
+}
+
+div.jssor_spin {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  background-color: rgba(0,0,0,0.7);
+}
+
+div.img_spin {
+  margin-top: -19px;
+  position: relative;
+  top: 50%;
+  width: 38px;
+  height: 38px;
+}
+
+div.slide {
+  cursor: default;
+  position: relative;
+  top: 0px;
+  left: 0px;
+  width: 300px;
+  height: 315px;
+  overflow: hidden;
+}
+
+.jssorb111 .i {
+  position: absolute;
+  color: #fff;
+  font-family: "Helvetica neue", Helvetica, Arial, sans-serif;
+  text-align: center;
+  cursor: pointer;
+  z-index: 0;
+}
+
+.jssorb111 .i .n {
+  display: none;
+}
+
+.jssorb111 .i .b {
+  fill: #fff;
+  stroke: #000;
+  stroke-width: 500;
+  stroke-miterlimit: 10;
+  stroke-opacity: 0.5;
+}
+
+.jssorb111 .i:hover .b {
+  fill: #fea900;
+  stroke: #fea900;
+  stroke-width: 6000;
+  stroke-opacity: 1;
+}
+
+.jssorb111 .iav .b {
+  fill: #000;
+  stroke-width: 6000;
+  stroke-opacity: 1;
+}
+
+.jssorb111 .i.idn {
+  opacity: 0.3;
+}
+
+.jssorb111 .iav .n, .jssorb111 .i:hover .n {
+  display: block;
+}
+
+/*jssor slider thumbnail skin 121 css*/
+div.jssort121 .p {
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-bottom: 1px solid rgba(255,255,255,.2);
+  box-sizing: border-box;
+  color: #ffffff;
+  font-size: 12px;
+  background: rgba(0,0,0,.1);
+  /* padding: 1px; */
+  opacity: 0.7;
+}
+
+.jssort121 .p .t {
+  position: absolute;
+  padding: 10px;
+  box-sizing: border-box;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  line-height: 24px;
+  overflow: hidden;
+}
+
+.jssort121 .p .i {
+  margin-right: 10px;
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 96px;
+  height: 48px;
+  border: none;
+  float: left;
+}
+
+.jssort121 .pav, .jssort121 .p:hover {
+  color: #000;
+  background: rgba(255,255,255,.7);
+}
+
+.jssort121 .p:hover {
+  opacity: .75;
+}
+
+.jssort121 .pav, .jssort121 .p:hover.pdn {
+  opacity:1;
+}
+
+.jssort121 .ti {
+  position: relative;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.jssort121 .d {
+  position: relative;
+  font-size: 12px;
+}
+ /*.jssort121 .d:before {content:'\a';white-space:pre;}*/
+
+/*########## Testmony #############*/
+.testmony_content {
+  background-color: #f2f2f2;
+  padding: 30px;
+  text-align: center;
+  color: #00333d;
+}
+
+.testmony_content h2 {
+  font-family: sans-serif;
+  font-size: 32px;
+  font-weight: normal;
+  padding: 10px;
+}
+
+.testmony_content p {
+  text-align: center;
+  padding: 10px;
+  font-size: 16px;
+}
+
+.testmony_content p#quote {
+  font-style: italic;
+  color: #777777;
+  /* font-family: Helvetica; */
+  font-size: 24px;
+  padding: 20px;
+}
+
+.testmony_content img {
+  width: 20%;
+  border-radius: 100px;
+  background-color: #cccccc;
+  padding: 5px;
+}
+
+.testmony_content p#border {
+  background-image: linear-gradient(90deg, #cc5f00, rgba(0,255,250,0.8));
+  padding: 2px;
+  width: 87%;
+  position: absolute;
+  top: 90%;
+}
+
 /*########## Service #############*/
 div.service_head {
   background-color: #eeeeee;
@@ -894,19 +1188,78 @@ div.footer_form form input[type=submit]:hover {
 /*########## About Us #############*/
 .about_us_container {
   background-color: #eeeeee;
-  padding: 20px;
+  font-size: 18px;
+  padding: 50px 50px;
   color: #03333d;
-  margin-bottom: 10px;
+  /* margin-bottom: 10px; */
 }
 
-.about_us_container h2, .about_us_container p {
+.about_us_head h1 {
   text-align: center;
+  font-family: sans-serif;
+  font-size: 42px;
 }
 
+.about_us_head p {
+  text-align: center;
+  font-size: 28px;
+}
+
+.about_us_head p#border {
+  background-image: linear-gradient(90deg, #cc5f00, rgba(0,255,250,0.8));
+  padding: 1px;
+  width: 40%;
+  float: right;
+  position: absolute;
+  left: 30%;
+  top: 12.5%;
+}
+
+.about_us_content {
+  background-color: #f2f2f2;
+  padding: 30px;
+  border-radius: 3px;
+}
+
+/* ########### Project  Content ####### */
+.project_container {
+  background-image: url(../img/claudi.jpg);
+  background-attachment: fixed;
+  background-size: 100%;
+}
+
+.project_bg {
+ background-color: rgba(0, 0, 0, 0.5);
+ padding: 50px;
+}
+
+.project_content {
+  background-color: #f2f2f2;
+  padding: 50px;
+  text-align: center;
+  border-radius: 3px;
+}
+
+.project_content i {
+  background-color: #ff8200;
+  box-shadow: 0px 4px 2px #dddddd;
+  color: #ffffff;
+  font-size: 32px;
+  padding: 20px;
+  border-radius: 100px;
+}
+
+.project_content p {
+  font-size: 24px;
+  /* font-family: Arial; */
+}
+
+span#project_num {
+  font-size: 40px;
+}
 
 /*########## Awards $ Testmony #############*/
 .award_test_wrapper {
-  /*background-color: #f4f4f4;*/
   margin-bottom: 10px;
 }
 
@@ -917,10 +1270,19 @@ div.footer_form form input[type=submit]:hover {
   padding: 20px;
 }
 
-.award_content h2 {
-  border-bottom: 1px solid #eeeeee;
+.award_content h1 {
   padding: 10px;
+  font-family: sans-serif;
+  font-weight: normal;
+  font-size: 38px;
 }
+
+.award_content p#border {
+  background-image: linear-gradient(90deg, #cc5f00, rgba(0,255,250,0.8));
+  padding: 2px;
+  width: 40%;
+}
+
 
 .award_content i {
   background-color: #ff8200;
@@ -1100,12 +1462,27 @@ div.footer_form form input[type=submit]:hover {
   padding: 30px;
   text-align: center;
   color: #00333d;
-  border-bottom: 4px solid #ff8200;
+}
+
+.testmony_content h2 {
+  font-family: sans-serif;
+  font-size: 32px;
+  font-weight: normal;
+  padding: 10px;
 }
 
 .testmony_content p {
+  text-align: center;
+  padding: 10px;
+  font-size: 16px;
+}
+
+.testmony_content p#quote {
   font-style: italic;
-  font-size: 18px;
+  color: #777777;
+  /* font-family: Helvetica; */
+  font-size: 24px;
+  padding: 20px;
 }
 
 .testmony_content img {
@@ -1113,6 +1490,14 @@ div.footer_form form input[type=submit]:hover {
   border-radius: 100px;
   background-color: #cccccc;
   padding: 5px;
+}
+
+.testmony_content p#border {
+  background-image: linear-gradient(90deg, #cc5f00, rgba(0,255,250,0.8));
+  padding: 2px;
+  width: 87%;
+  position: absolute;
+  top: 90%;
 }
 /*########## Service #############*/
 .service_head {
@@ -1243,6 +1628,73 @@ p#service_title {
   position: relative;
   z-index: 1000;
 
+}
+
+/* ########### faq ############### */
+
+.faq_container {
+  background-image: url(../img/claudi.jpg);
+  background-position: 100%;
+  background-attachment: fixed;
+
+}
+
+.faq_container i {
+  background-color: #ff8200;
+  padding: 12px 15px;
+  border-radius: 100px;
+  color: #ffffff;
+}
+
+.faq_bg {
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 50px;
+}
+
+.faq_container h2 {
+  text-align: center;
+  color: #dddddd;
+  font-size: 32px;
+}
+
+.faq_content {
+  background-color: #fff500;
+  padding: 20px;
+  border-radius: 2px 40px 2px 2px;
+  box-shadow: 0px 1px 2px #777777;
+  width: 50%;
+  float: right;
+  clear: both;
+  position: relative;
+  right: 25%;
+  bottom: 10%;
+}
+
+.faq_content p {
+  padding: 5px 30px;
+  background-color: #f4f4f4;
+  border-radius: 2px;
+}
+
+.faq_content h4 {
+  cursor: pointer;
+  padding: 4px;
+  font-weight: normal;
+}
+
+.faq_content h4:hover {
+  background-color: #555555;
+  color: #dddddd;
+  border-radius: 3px;
+}
+
+.faq_content i {
+  background-color: #222222;
+  font-size: 10px;
+  margin-right: 10px;;
+  padding: 3px;
+  border-radius: 20px;
+  color: #dddddd;
 }
 
 /*#########################################*/
