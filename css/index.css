@@ -109,14 +109,14 @@ nav a:first-child {
   float: left;
   line-height: 1.2;
   letter-spacing: 1.2px;
-  font-family: Helvetica;
+  font-family: "OpenSans-Light";
   color: #00a0ff;
   margin: 0px 10px 0px 0px;
   width: 30%;
-  padding: 5px;
+  padding: 7px 5px;
   position: relative;
-  left: 5%;
-  margin-top: 40px;
+  left: 5.5%;
+  margin-top: 22px;
   font-size: 14px;
   font-weight: normal;
 }
@@ -134,8 +134,13 @@ nav a:nth-child(2) {
 
 }
 
+nav a#logo {
+  margin-top: -20px;
+}
+
 nav a#theme {
   font-size: 14px;
+  padding: 2px 0px 22px 0px;
 }
 
 nav.main_nav a#active {
@@ -484,7 +489,7 @@ div.about_us_head p#border {
   float: right;
   position: absolute;
   left: 20%;
-  top: 17%;
+  top: 21%;
 }
 
 
@@ -512,8 +517,7 @@ div.about_us_head {
 div.project_container {
   background-image: url(../img/claudi.jpg);
   background-attachment: fixed;
-  background-size: 100%;
-  background-position: center;
+  background-size: 100% 700px;
   background-repeat: no-repeat;
 }
 
@@ -740,39 +744,38 @@ div.jssort121 .p {
  /*.jssort121 .d:before {content:'\a';white-space:pre;}*/
 
 /*########## Testmony #############*/
-.testmony_content {
+div.testmony_content {
   background-color: #f2f2f2;
   padding: 30px;
   text-align: center;
   color: #00333d;
 }
 
-.testmony_content h2 {
+div.testmony_content h2 {
   font-family: sans-serif;
-  font-size: 32px;
+  font-size: 24px;
   font-weight: normal;
   padding: 10px;
 }
 
-.testmony_content p {
+div.testmony_content p {
   text-align: center;
   padding: 10px;
   font-size: 16px;
 }
 
-.testmony_content p#quote {
+div.testmony_content p#quote {
   font-style: italic;
   color: #777777;
-  /* font-family: Helvetica; */
-  font-size: 24px;
+  font-size: 20px;
   padding: 20px;
 }
 
-.testmony_content img {
-  width: 20%;
+div.testmony_content img {
+  width: 35%;
   border-radius: 100px;
   background-color: #cccccc;
-  padding: 5px;
+  /* padding: 5px; */
 }
 
 .testmony_content p#border {
@@ -788,19 +791,17 @@ div.service_head {
   background-color: #eeeeee;
   padding: 20px;
   color: #03333d;
-}
-
-div.service_head h2, div.service_head p {
-  text-align: left;
-}
-
-div.service_head h2 {
-  font-size: 14px;
   border-bottom: 1px solid #cccccc;
 }
 
+div.service_head h1 {
+  text-align: center;
+  font-size: 22px;
+}
+
 div.service_head p {
-  font-size: 13px;
+  font-size: 16px;
+  text-align: center;
 }
 /*###### Service Container ######*/
 div.service_container {
@@ -808,6 +809,7 @@ div.service_container {
   padding: 20px;
   color: #03333d;
   margin-bottom: 10px;
+  text-align: center;
 }
 
 div.service_container i {
@@ -843,19 +845,17 @@ div.work_head {
   background-color: #eeeeee;
   padding: 20px 10px;
   color: #03333d;
-}
-
-div.work_head h2, div.work_head p {
-  text-align: left;
-}
-
-div.work_head h2 {
-  font-size: 14px;
   border-bottom: 1px solid #cccccc;
 }
 
+div.work_head h1 {
+  font-size: 22px;
+  text-align: center;
+}
+
 div.work_head p {
-  font-size: 13px;
+  font-size: 16px;
+  text-align: center;
 }
 
 
@@ -865,6 +865,7 @@ div.work_container {
   background-color: #cccccc;
   padding: 20px;
   color: #03333d;
+  border-bottom: 1px solid #ff8200;
 }
 
 div.work_content {
@@ -880,12 +881,12 @@ div.work_content {
   width: 100%;
 }
 
-.work_content p#work-letter {
+div.work_content p#work-letter {
   background-color: #00cdff;
   padding: 5px 7px;
   color: #f2f2f2;
   font-weight: 600;
-  width: 8%;
+  width: 13%;
   margin-bottom: -35px;
   border-radius: 100%;
   position: relative;
@@ -913,25 +914,109 @@ div.work_content {
 
 }
 
+div.work_container button {
+  padding: 6px 25px;
+  border: none;
+}
+
+/* ########### faq ############### */
+
+div.faq_container {
+  background-image: url(../img/claudi.jpg);
+  background-position: left;
+  background-size: 100% 1050px;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+}
+
+div.faq_container i {
+  background-color: #ff8200;
+  padding: 12px 15px;
+  border-radius: 100px;
+  color: #ffffff;
+}
+
+div.faq_bg {
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 40px;
+}
+
+div.faq_bg h2 {
+  text-align: center;
+  color: #dddddd;
+  font-size: 32px;
+}
+
+div.faq_content {
+  background-color: #fff500;
+  padding: 10px;
+  border-radius: 2px 40px 2px 2px;
+  box-shadow: 0px 1px 2px #777777;
+  width: 95%;
+  float: right;
+  clear: both;
+  position: relative;
+  right: 1%;
+  bottom: 10%;
+}
+
+.faq_content p {
+  padding: 5px 30px;
+  background-color: #f4f4f4;
+  border-radius: 2px;
+}
+
+div.faq_content div.main i {
+  font-size: 11px;
+  padding: 2px;
+  float: left;
+  clear: both;
+  position: absolute;
+  right: 90%;
+}
+
+div.faq_content div.main h4 {
+  cursor: pointer;
+  display: block;
+  font-size: 14px;
+  padding: 4px;
+  font-weight: normal;
+  margin-left: 75px;
+}
+
+div.faq_content h4:hover {
+  background-color: #555555;
+  color: #dddddd;
+  border-radius: 3px;
+}
+
+.faq_content i {
+  background-color: #222222;
+  font-size: 10px;
+  margin-right: 10px;;
+  padding: 3px;
+  border-radius: 20px;
+  color: #dddddd;
+}
+
+
 /*########## Contact Header #####*/
 
 div.contact_head {
   background-color: #eeeeee;
   padding: 20px;
   color: #03333d;
-}
-
-div.contact_head h2, div.contact_head p {
-  text-align: left;
-}
-
-div.contact_head h2 {
-  font-size: 14px;
   border-bottom: 1px solid #cccccc;
 }
 
+div.contact_head h1 {
+  font-size: 22px;
+  text-align: center;
+}
+
 div.contact_head p {
-  font-size: 13px;
+  font-size: 16px;
+  text-align: center;
 }
 
 div.contact_wrapper {
@@ -1001,17 +1086,18 @@ div.contact_form form input[type=text]:focus, div.contact_form form textarea:foc
   border: 1px solid #cc0055;
 }
 
-div.contact_imge {
- /*background-color: #eeeeee;*/
- padding: 10px;
-}
-
 div.contact_imge img {
-  display: none;
+  display: block;
+  opacity: 0.4;
+  width: 100%;
+  height: 410px;
+  border-radius: 1px 700px 300px 60px;
+  margin-top: -40px;
 }
 
 div.contact_imge p#imge_title {
-  display: none;
+  display: block;
+  width: 50%;
 }
 
 /*############# Footer #########*/
@@ -1086,7 +1172,7 @@ div.footer_form form input[type=submit]:hover {
   font-size: 14px;
 }
 
-} /*end media query*/
+} /*end 800px media query*/
 
 
 
@@ -1177,6 +1263,97 @@ div.footer_form form input[type=submit]:hover {
 
   .active, .dot:hover {
     background-color: #717171;
+  }
+
+  /* ##### about_boreder ##### */
+  div.about_us_head p#border {
+    background-image: linear-gradient(90deg, #cc5f00, rgba(0,255,250,0.8));
+    padding: 1px;
+    width: 56%;
+    float: right;
+    position: absolute;
+    left: 20%;
+    top: 18%;
+  }
+
+  /* ########### faq ############### */
+
+  div.faq_container {
+    background-image: url(../img/claudi.jpg);
+    background-position: left;
+    background-size: 100%;
+    background-attachment: scroll;
+    background-repeat: no-repeat;
+  }
+
+  div.faq_container i {
+    background-color: #ff8200;
+    padding: 12px 15px;
+    border-radius: 100px;
+    color: #ffffff;
+  }
+
+  div.faq_bg {
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 40px;
+  }
+
+  div.faq_bg h2 {
+    text-align: center;
+    color: #dddddd;
+    font-size: 32px;
+  }
+
+  div.faq_content {
+    background-color: #fff500;
+    padding: 10px;
+    border-radius: 2px 40px 2px 2px;
+    box-shadow: 0px 1px 2px #777777;
+    width: 95%;
+    float: right;
+    clear: both;
+    position: relative;
+    right: 1%;
+    bottom: 10%;
+  }
+
+  .faq_content p {
+    padding: 5px 30px;
+    background-color: #f4f4f4;
+    border-radius: 2px;
+  }
+
+  div.faq_content div.main i {
+    font-size: 11px;
+    padding: 2px;
+    float: left;
+    clear: both;
+    position: absolute;
+    right: 80%;
+  }
+
+  div.faq_content div.main h4 {
+    cursor: pointer;
+    display: block;
+    font-size: 14px;
+    padding: 4px;
+    font-weight: normal;
+    margin-left: 50px;
+  }
+
+  div.faq_content h4:hover {
+    background-color: #555555;
+    color: #dddddd;
+    border-radius: 3px;
+  }
+
+  .faq_content i {
+    background-color: #222222;
+    font-size: 10px;
+    margin-right: 10px;;
+    padding: 3px;
+    border-radius: 20px;
+    color: #dddddd;
   }
 
 }
@@ -1506,7 +1683,7 @@ span#project_num {
   color: #03333d;
 }
 
-.service_head h2, .service_head p {
+.service_head h1, .service_head p {
   text-align: center;
 }
 /*###### Service Container ######*/
@@ -1547,7 +1724,7 @@ p#service_title {
   color: #03333d;
 }
 
-.work_head h2, .work_head p {
+.work_head h1, .work_head p {
   text-align: center;
 }
 
@@ -1706,7 +1883,7 @@ p#service_title {
   color: #03333d;
 }
 
-.contact_head h2, .contact_head p {
+.contact_head h1, .contact_head p {
   text-align: center;
 }
 

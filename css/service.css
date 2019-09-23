@@ -105,7 +105,6 @@ nav a:not(:first-child){
   font-weight: 600;
 }
 
-
 nav a:first-child {
   float: left;
   line-height: 1.2;
@@ -143,7 +142,6 @@ nav a#theme {
   font-size: 14px;
   padding: 2px 0px 22px 0px;
 }
-
 
 nav.main_nav a#active {
   border-bottom: 1px solid #f1f1f1;
@@ -472,141 +470,122 @@ div.text {
   background-color: #717171;
 }
 
-
-/*########## Our Work #############*/
-div.work_head {
+/*########## Service #############*/
+div.service_head {
   background-color: #eeeeee;
-  padding: 20px 10px;
+  padding: 20px;
   color: #03333d;
   border-bottom: 1px solid #cccccc;
 }
 
-div.work_head h1, div.work_head p {
+div.service_head h1 {
   text-align: center;
-}
-
-div.work_head h1 {
   font-size: 22px;
 }
 
-div.work_head p {
+div.service_head p {
+  text-align: center;
   font-size: 16px;
 }
 
-
-/*###### Our Work Container ######*/
-
-div.work_container {
+/*###### Service Container ######*/
+div.service_container {
   background-color: #cccccc;
   padding: 20px;
   color: #03333d;
+  margin-bottom: 10px;
+  text-align: center;
 }
 
-div.work_content {
-  /*background-color: rgba(0,0,0,0.9);*/
-  padding: 2px;
-  position: relative;
-  transition: 0.6s ease;
-  user-select: none;
-  z-index: 1000;
-
+div.service_container i {
+  background-color: #ff8200;
+  padding: 14px;
+  color: #dddddd;
+  border-radius: 100px;
+  font-size: 30px;
 }
 
-.work_content img {
-  width: 100%;
-}
-
-.work_content p#work-letter {
-  background-color: #00cdff;
-  padding: 5px 7px;
-  color: #f2f2f2;
-  font-weight: 600;
-  width: 8%;
-  margin-bottom: -35px;
-  border-radius: 100%;
-  position: relative;
-  z-index: 100;
-}
-
-.work_content .work_details {
-  display: none;
-  position: relative;
-  transition: 0.6s ease;
-  /*margin-top: -80px;*/
-  /*user-select: none;*/
-}
-
-.work_content:hover {
-  background-color: #eeeeee;
-  position: relative;
-  z-index: 1000;
-
-}
-
-.work_content:hover .work_details {
-  display: block;
-   background-color: #eeeeee;
-  /*margin-top: -80px;*/
-  position: relative;
-  z-index: 1000;
-
-}
-
-/* ######### Work Trend ######### */
-
-div.work_trend_container {
-  background-image: url(../img/christopher.jpg);
-  background-attachment: fixed;
-  background-size: 100% 700px;
-  border-radius: 2px 0px 1500px 0px;
-  background-repeat: no-repeat;
-}
-
-div.work_trend_bg {
-  background-color: rgba(0, 0, 0, 0.5);
-  padding: 10px;
-  border-radius: 2px 0px 1500px 0px;
-}
-
-div.work_trend_bg h1 {
-  color: #eeeeee;
-  font-size: 24px;
-}
-
-div.work_trend_bg p {
-  color: #999999;
-  font-size: 14px;
-  padding: 2px 10px;
-}
-
-div.work_trend_bg i {
-  padding: 0px 5px;
-}
-
-div.work_trend_bg p#trend_theme {
-  color: #ff8200;
+div.service_content p#service_title {
   font-size: 16px;
+  font-weight: 600;
+}
+
+div.service_content p {
+  font-size: 16px;
+}
+
+div.service_content {
+  padding: 10px 12px;
+  cursor: pointer;
+  border-bottom: 1px solid #bbbbbb;
+}
+
+.service_content:hover {
+  background-color:#989898;
+  border-radius: 3px;
+}
+
+/* ########### Consultant ######## */
+
+div.consult_container {
+  background-image: url(../img/claudi.jpg);
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+
+.consult_bg {
+  background-color: rgba(0, 0, 0, 0.8);
+  padding: 10px;
+}
+
+div.consult_head {
+  /* background-color: yellow; */
+  padding: 50px;
+}
+
+div.consult_head h1 {
+  color: #dddddd;
+  width: 85%;
+}
+
+.consult_head p {
+  font-size: 20px;
+  color: #cccccc;
+  padding: 13px 0px;
+}
+
+.consult_head a {
+  text-decoration: none;
+  border: 2px solid #ff8200;
+  padding: 10px 20px;
+  font-size: 24px;
+  color: #dddddd;
+  transition: All 0.4s ease;
+  border-radius: 1px;
+}
+
+.consult_head a:hover {
+  background-color: #ff8200;
 }
 
 /*########## Contact Header #####*/
 
 div.contact_head {
-  /* background-color: #eeeeee; */
+  background-color: #eeeeee;
   padding: 20px;
   color: #03333d;
-  border-bottom: 1px solid #989898;
-}
-
-div.contact_head h1, div.contact_head p {
-  text-align: center;
+  border-bottom: 1px solid #cccccc;
 }
 
 div.contact_head h1 {
   font-size: 22px;
+  text-align: center;
 }
 
 div.contact_head p {
   font-size: 16px;
+  text-align: center;
 }
 
 div.contact_wrapper {
@@ -631,7 +610,6 @@ div.contact_form label {
 }
 
 div.contact_form i {
-  /*background-color: #dddddd;*/
   margin-right: -30px;
   position: relative;
   z-index: 1;
@@ -677,7 +655,6 @@ div.contact_form form input[type=text]:focus, div.contact_form form textarea:foc
   border: 1px solid #cc0055;
 }
 
-
 div.contact_imge img {
   display: block;
   opacity: 0.4;
@@ -691,7 +668,6 @@ div.contact_imge p#imge_title {
   display: block;
   width: 50%;
 }
-
 
 /*############# Footer #########*/
 .footer-container {
@@ -766,6 +742,7 @@ div.footer_form form input[type=submit]:hover {
 }
 
 } /*end 800px media query*/
+
 
 
 /*######### Media Query #######*/
@@ -857,284 +834,204 @@ div.footer_form form input[type=submit]:hover {
     background-color: #717171;
   }
 
+  /* ########### Consultant ######## */
+
+  div.consult_container {
+    background-image: url(../img/claudi.jpg);
+    background-attachment: scroll;
+    background-size: 100%;
+    background-repeat: no-repeat;
+  }
+
+  div.consult_bg {
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 20px;
+  }
+
+  div.consult_head {
+    padding: 10px;
+  }
+
+  div.consult_head h1 {
+    color: #dddddd;
+    width: 100%;
+    font-size: 18px;
+  }
+
+  div.consult_head p {
+    font-size: 14px;
+    color: #cccccc;
+    padding: 13px 0px;
+  }
+
+  div.consult_head a {
+    text-decoration: none;
+    border: 2px solid #ff8200;
+    padding: 5px 10px;
+    font-size: 16px;
+    color: #dddddd;
+    transition: All 0.4s ease;
+    border-radius: 1px;
+  }
+
+  div.consult_head a:hover {
+    background-color: #ff8200;
+  }
+/* ########### Service ############ */
+  div.service_head {
+    background-color: #eeeeee;
+    padding: 20px;
+    color: #03333d;
+  }
+
+  div.service_head h1 {
+    text-align: center;
+    font-size: 24px;
+  }
+
+  div.service_head p {
+    font-size: 14px;
+  }
+  /*###### Service Container ######*/
+  .service_container {
+    background-color: #cccccc;
+    padding: 20px;
+    color: #03333d;
+  }
+
+  div.service_container i {
+    background-color: #ff8200;
+    padding: 14px;
+    color: #dddddd;
+    border-radius: 100px;
+    font-size: 24px;
+  }
+
+  p#service_title {
+    font-size: 24px;
+    font-weight: 600;
+  }
+
+  .service_content {
+    padding: 10px 110px;
+    cursor: pointer;
+  }
+
+  .service_content:hover {
+    background-color:#989898;
+    border-radius: 3px;
+  }
+
+  div.contact_head {
+    background-color: #eeeeee;
+    padding: 15px;
+    color: #03333d;
+  }
+
+  div.contact_head h1 {
+    text-align: center;
+    font-size: 24px;
+  }
+
+div.contact_head p {
+  text-align: center;
+  font-size: 14px;
 }
 
-/* End 500px Media query */
+
+}
+/* End 500px media query */
+
+
 /*#########################################*/
 
-/*########## Jssor Css #############*/
-/*jssor slider loading skin spin css*/
-.jssor_position {
-  position: relative;
-  margin: 0 auto;
-  top: 0px;
-  left: 0px;
-  width: 980px;
-  height: 380px;
-  overflow: hidden;
-  visibility: hidden;
-}
-
-.img_spin {
-  position: absolute;
-  top: 0px;
-  left: 0px;
-  width: 100%;
-  height: 100%;
-  text-align: center;
-  background-color: rgba(0,0,0,0.7);
-}
-
-.img_spin img {
-  margin-top: -19px;
-  position: relative;
-  top: 50%;
-  width: 38px;
-  height: 38px;
-}
-
-.aside_content_slide {
-  cursor: default;
-  position: relative;
-  top: 0px;
-  left: 0px;
-  width: 980px;
-  height: 380px;
-  overflow: hidden;
-}
-
-.jssorl-009-spin img {
-  animation-name: jssorl-009-spin;
-  animation-duration: 1.6s;
-  animation-iteration-count: infinite;
-  animation-timing-function: linear;
-}
-
-@keyframes jssorl-009-spin {
-  from {
-  transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
-
- /*jssor slider bullet skin 111 css*/
-.jssorb111 .i {
-  position: absolute;
-  color: #fff;
-  font-family: "Helvetica neue", Helvetica, Arial, sans-serif;
-  text-align: center;
-  cursor: pointer;
-  z-index: 0;
-}
-
-.jssorb111 .i .n {
-  display: none;
-}
-
-.jssorb111 .i .b {
-  fill: #fff;
-  stroke: #000;
-  stroke-width: 500;
-  stroke-miterlimit: 10;
-  stroke-opacity: 0.5;
-}
-
-.jssorb111 .i:hover .b {
-  fill: #fea900;
-  stroke: #fea900;
-  stroke-width: 6000;
-  stroke-opacity: 1;
-}
-
-.jssorb111 .iav .b {
-  fill: #000;
-  stroke-width: 6000;
-  stroke-opacity: 1;
-}
-
-.jssorb111 .i.idn {
-  opacity: 0.3;
-}
-
-.jssorb111 .iav .n, .jssorb111 .i:hover .n {
-  display: block;
-}
-
-/*jssor slider thumbnail skin 121 css*/
-
-.jssort121 .p {
-  position:absolute;
-  top:0;
-  left:0;
-  border-bottom: 1px solid rgba(255,255,255,.2);
-  box-sizing: border-box;
-  color: #fff;
-  background: rgba(0,0,0,.1);
-  opacity: 0.7;
-}
-
-.jssort121 .p .t {
-  position: absolute;
-  padding: 10px;
-  box-sizing: border-box;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 282px;
-  line-height: 24px;
-  overflow: hidden;
-}
-.jssort121 .p .i {
-  margin-right: 10px;
-  position: relative;
-  top: 0;
-  left: 0;
-  width: 96px;
-  height: 48px;
-  border: none;
-  float: left;
-}
-
-.jssort121 .pav, .jssort121 .p:hover {
-  color: #000;
-  background: rgba(255,255,255,.7);
-}
-
-.jssort121 .p:hover {
-  opacity: 0.75;
-}
-
-.jssort121 .pav, .jssort121 .p:hover.pdn {
-  opacity: 1;
-}
-
-.jssort121 .ti {
-  position: relative;
-  font-size: 14px;
-  font-weight: bold;
-}
-
-.jssort121 .d {
-  position:relative;
-  font-size:12px;
-}
-/*.jssort121 .d:before {content:'\a';white-space:pre;}*/
-
-
-/*########## Our Work #############*/
-.work_wrapper {
-  background-color: #f2f2f2;
-  padding: 20px;
-}
-.work_head {
+/*########## Service #############*/
+.service_head {
   background-color: #eeeeee;
   padding: 60px;
   color: #03333d;
 }
 
-.work_head h1, .work_head p {
+.service_head h1, .service_head p {
   text-align: center;
 }
-
-/*###### Our Work Container ######*/
-
-.work_container {
+/*###### Service Container ######*/
+.service_container {
   background-color: #cccccc;
   padding: 20px;
   color: #03333d;
 }
 
-.work_content {
-  /*background-color: rgba(0,0,0,0.9);*/
-  padding: 2px;
-  position: relative;
-  transition: 0.6s ease;
-  user-select: none;
-  z-index: 1000;
-
-}
-
-.work_content img {
-  width: 100%;
-}
-
-.work_content p#work-letter {
-  background-color: #00cdff;
-  padding: 5px 7px;
-  color: #f2f2f2;
-  font-weight: 600;
-  width: 8%;
-  margin-bottom: -35px;
-  border-radius: 100%;
-  position: relative;
-  z-index: 100;
-}
-
-.work_content .work_details {
-  display: none;
-  position: relative;
-  transition: 0.6s ease;
-  /*margin-top: -80px;*/
-  /*user-select: none;*/
-}
-
-.work_content:hover {
-  background-color: #eeeeee;
-  position: relative;
-  z-index: 1000;
-
-}
-
-.work_content:hover .work_details {
-  display: block;
-   background-color: #eeeeee;
-  /*margin-top: -80px;*/
-  position: relative;
-  z-index: 1000;
-
-}
-
-/* ######### Work Trend ######### */
-
-.work_trend_container {
-  background-image: url(../img/christopher.jpg);
-  background-attachment: fixed;
-  background-size: 100%;
-  border-radius: 2px 0px 1500px 0px;
-}
-
-.work_trend_bg {
-  background-color: rgba(0, 0, 0, 0.5);
-  padding: 100px;
-  border-radius: 2px 0px 1500px 0px;
-}
-
-.work_trend_bg h1 {
+.service_container i {
+  background-color: #ff8200;
+  padding: 14px;
   color: #dddddd;
+  border-radius: 100px;
   font-size: 42px;
 }
 
-.work_trend_bg p {
-  color: #999999;
+p#service_title {
   font-size: 24px;
-  padding: 5px 50px;
+  font-weight: 600;
 }
 
-.work_trend_bg i {
-  padding: 0px 25px;
+.service_content {
+  padding: 10px 110px;
+  cursor: pointer;
 }
 
-p#trend_theme {
-  color: #ff8200;
-  font-size: 34px;
+.service_content:hover {
+  background-color:#989898;
+  border-radius: 3px;
 }
-/*#########################################*/
+
+/* ########### Consultant ######## */
+
+.consult_container {
+  background-image: url(../img/claudi.jpg);
+  background-attachment: fixed;
+  background-size: 100%;
+}
+
+.consult_bg {
+  background-color: rgba(0, 0, 0, 0.8);
+  padding: 10px;
+}
+
+.consult_head {
+  /* background-color: yellow; */
+  padding: 100px;
+}
+
+.consult_head h1 {
+  color: #dddddd;
+  width: 50%;
+}
+
+.consult_head p {
+  font-size: 20px;
+  color: #777777;
+  padding: 13px 0px;
+}
+
+.consult_head a {
+  text-decoration: none;
+  border: 2px solid #ff8200;
+  padding: 10px 20px;
+  font-size: 24px;
+  color: #dddddd;
+  transition: All 0.4s ease;
+  border-radius: 1px;
+}
+
+.consult_head a:hover {
+  background-color: #ff8200;
+}
+
 /*########## Contact Header #####*/
 
 .contact_head {
-  /* background-color: #eeeeee; */
+  background-color: #eeeeee;
   padding: 60px;
   color: #03333d;
 }
